@@ -1,0 +1,135 @@
+{
+  "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IEasyAuction",
+          "name": "_easyAuction",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_nativeTokenWrapper",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "auctionId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint96[]",
+          "name": "_minBuyAmounts",
+          "type": "uint96[]"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "_prevSellOrders",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "string",
+          "name": "referralCode",
+          "type": "string"
+        }
+      ],
+      "name": "depositAndPlaceOrder",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "userId",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "easyAuction",
+      "outputs": [
+        {
+          "internalType": "contract IEasyAuction",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nativeTokenWrapper",
+      "outputs": [
+        {
+          "internalType": "contract IWETH",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xca3b89cec9a40253860b5b817d19030d8b8066bd449653deb06679a98ff74b7a",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+    "transactionIndex": 0,
+    "gasUsed": "393052",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000040000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000120000001000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000001000000000000000000010000000000000008000000000000000000000000000000000000000000000",
+    "blockHash": "0x4a4fc067d3721387fef11a0373a93a640dfa00c65b750980005e8c8ec3b94929",
+    "transactionHash": "0xca3b89cec9a40253860b5b817d19030d8b8066bd449653deb06679a98ff74b7a",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 6,
+        "transactionHash": "0xca3b89cec9a40253860b5b817d19030d8b8066bd449653deb06679a98ff74b7a",
+        "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+        "topics": [
+          "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+          "0x0000000000000000000000005fc8d32690cc91d4c39d9d3abcbd16989f875707",
+          "0x000000000000000000000000cf7ed3acca5a467e9e704c703e8d87f634fb0fc9"
+        ],
+        "data": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "logIndex": 0,
+        "blockHash": "0x4a4fc067d3721387fef11a0373a93a640dfa00c65b750980005e8c8ec3b94929"
+      }
+    ],
+    "blockNumber": 6,
+    "cumulativeGasUsed": "393052",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+    "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "d4e9ae7c43b28288ceb9c390effeb74f",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IEasyAuction\",\"name\":\"_easyAuction\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_nativeTokenWrapper\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"},{\"internalType\":\"uint96[]\",\"name\":\"_minBuyAmounts\",\"type\":\"uint96[]\"},{\"internalType\":\"bytes32[]\",\"name\":\"_prevSellOrders\",\"type\":\"bytes32[]\"},{\"internalType\":\"string\",\"name\":\"referralCode\",\"type\":\"string\"}],\"name\":\"depositAndPlaceOrder\",\"outputs\":[{\"internalType\":\"uint64\",\"name\":\"userId\",\"type\":\"uint64\"}],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"easyAuction\",\"outputs\":[{\"internalType\":\"contract IEasyAuction\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nativeTokenWrapper\",\"outputs\":[{\"internalType\":\"contract IWETH\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/wrappers/DepositAndPlaceOrder.sol\":\"DepositAndPlaceOrder\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/IERC20.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `to`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address to, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `from` to `to` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(address from, address to, uint256 amount) external returns (bool);\\n}\\n\",\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\"},\"contracts/interfaces/IEasyAuction.sol\":{\"content\":\"pragma solidity ^0.8.2;\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\n\\ninterface IEasyAuction {\\n    //E1 - no longer in order placement phase\\n    //E2 - no longer in order placement and cancelation phase\\n    //E3 - Auction not in solution submission phase\\n    //E4 - Auction not yet finished\\n    //E5 - ReferralRewardManager cannot be zero address\\n    //E6 - Fee is not allowed to be set higher than 2%\\n    //E7 - Strategy is currently disabled\\n    //E8 - referral fee cannot exceed 10%\\n    //E9 - cannot auction zero tokens\\n    //E10 - tokens cannot be auctioned for free\\n    //E11 - minimumBiddingAmountPerOrder is not allowed to be zero\\n    //E12 - time periods are not configured correctly\\n    //E13 - auction end date must be in the future\\n    //E14 - Only owner can create auctions with no strategy\\n    //E15 - _minBuyAmounts must be greater than 0\\n    //E16 - limit price not better than mimimal offer\\n    //E17 - order too small\\n    //E18 - referral code not registered\\n    //E19 - referral code owner cannot be submitter\\n    //E20 - reached end of order list\\n    //E21 - too many orders summed up\\n    //E22 - Only the user can cancel his orders\\n    //E23 - only allowed to claim for same user\\n    //E24 - order is no longer claimable\\n    //E25 - User already registered\\n\\n    //structs\\n    struct IClaimedFromOrder {\\n        uint256 auctionId;\\n        uint64 userId;\\n        uint96 buyAmount;\\n        uint96 sellAmount;\\n        string referralCode;\\n        uint256 referralFee;\\n        uint256 auctioningTokenAmount;\\n        uint256 biddingTokenAmount;\\n    }\\n    struct InitParams {\\n        IERC20 _auctioningToken;\\n        IERC20 _biddingToken;\\n        uint256 orderCancellationEndDate;\\n        uint256 auctionEndDate;\\n        uint96 _auctionedSellAmount;\\n        uint96 _minBuyAmount;\\n        uint256 minimumBiddingAmountPerOrder;\\n        uint256 minFundingThreshold;\\n        uint256 _referralFeeNumerator;\\n        uint256 strategyId;\\n        bytes32[] _strategyInitParams;\\n    }\\n    struct AuctionData {\\n        IERC20 auctioningToken;\\n        IERC20 biddingToken;\\n        uint256 orderCancellationEndDate;\\n        uint256 auctionEndDate;\\n        bytes32 initialAuctionOrder;\\n        uint256 minimumBiddingAmountPerOrder;\\n        uint256 interimSumBidAmount;\\n        bytes32 interimOrder;\\n        bytes32 clearingPriceOrder;\\n        uint96 volumeClearingPriceOrder;\\n        bool minFundingThresholdNotReached;\\n        uint256 minFundingThreshold;\\n    }\\n\\n    //events\\n    event NewSellOrder(\\n        uint256 indexed auctionId,\\n        uint64 indexed userId,\\n        uint96 buyAmount,\\n        uint96 sellAmount,\\n        string referralCode\\n    );\\n    event CancellationSellOrder(\\n        uint256 indexed auctionId,\\n        uint64 indexed userId,\\n        uint96 buyAmount,\\n        uint96 sellAmount\\n    );\\n    event ClaimedFromOrder(IClaimedFromOrder params);\\n    event NewUser(uint64 indexed userId, address indexed userAddress);\\n    event NewAuction(\\n        uint256 indexed auctionId,\\n        IERC20 indexed _auctioningToken,\\n        IERC20 indexed _biddingToken,\\n        uint256 orderCancellationEndDate,\\n        uint256 auctionEndDate,\\n        uint64 userId,\\n        uint96 _auctionedSellAmount,\\n        uint96 _minBuyAmount,\\n        uint256 minimumBiddingAmountPerOrder,\\n        uint256 minFundingThreshold\\n    );\\n    event AuctionCleared(\\n        uint256 indexed auctionId,\\n        uint64 indexed userId,\\n        uint96 buyAmount,\\n        uint96 sellAmount,\\n        uint96 soldAuctioningTokens,\\n        uint96 soldBiddingTokens\\n    );\\n    event UserRegistration(address indexed user, uint64 userId);\\n\\n    //functions\\n    function placeSellOrdersOnBehalf(\\n        uint256 auctionId,\\n        uint96[] calldata _minBuyAmounts,\\n        uint96[] calldata _sellAmounts,\\n        bytes32[] calldata _prevSellOrders,\\n        address orderSubmitter,\\n        string calldata referralCode\\n    ) external returns (uint64 userId);\\n}\\n\",\"keccak256\":\"0x16325a8eb7b015b878ad533ed3c2790007e4a513f1413f573f81d7250826241c\"},\"contracts/interfaces/IWETH.sol\":{\"content\":\"pragma solidity ^0.8.2;\\n\\ninterface IWETH {\\n    function deposit() external payable;\\n\\n    function transfer(address to, uint256 value) external returns (bool);\\n\\n    function withdraw(uint256) external;\\n}\\n\",\"keccak256\":\"0x505481410bb45395126e41ca57dfac0058957c38f090781099a3eae5c1f3a8dd\"},\"contracts/wrappers/DepositAndPlaceOrder.sol\":{\"content\":\"pragma solidity ^0.8.2;\\nimport \\\"@openzeppelin/contracts/token/ERC20/IERC20.sol\\\";\\nimport \\\"../interfaces/IEasyAuction.sol\\\";\\nimport \\\"../interfaces/IWETH.sol\\\";\\n\\ncontract DepositAndPlaceOrder {\\n    IEasyAuction public immutable easyAuction;\\n    IWETH public immutable nativeTokenWrapper;\\n\\n    constructor(IEasyAuction _easyAuction, address _nativeTokenWrapper) {\\n        nativeTokenWrapper = IWETH(_nativeTokenWrapper);\\n        easyAuction = _easyAuction;\\n        IERC20(_nativeTokenWrapper).approve(\\n            address(_easyAuction),\\n            type(uint256).max\\n        );\\n    }\\n\\n    function depositAndPlaceOrder(\\n        uint256 auctionId,\\n        uint96[] calldata _minBuyAmounts,\\n        bytes32[] calldata _prevSellOrders,\\n        string calldata referralCode\\n    ) external payable returns (uint64 userId) {\\n        uint96[] memory sellAmounts = new uint96[](1);\\n        require(msg.value < 2 ** 96, \\\"too much value sent\\\");\\n        nativeTokenWrapper.deposit{value: msg.value}();\\n        sellAmounts[0] = uint96(msg.value);\\n        {\\n            return\\n                easyAuction.placeSellOrdersOnBehalf(\\n                    auctionId,\\n                    _minBuyAmounts,\\n                    sellAmounts,\\n                    _prevSellOrders,\\n                    msg.sender,\\n                    referralCode\\n                );\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0x21e70cca8e9cea906dbf9898bf74d4232f709cc2b2570b42714842e749dbd78d\"}},\"version\":1}",
+  "bytecode": "0x60c060405234801561001057600080fd5b506040516106f53803806106f583398101604081905261002f916100d0565b6001600160a01b0381811660a0819052908316608081905260405163095ea7b360e01b81526004810191909152600019602482015263095ea7b3906044016020604051808303816000875af115801561008c573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100b0919061010a565b505050610133565b6001600160a01b03811681146100cd57600080fd5b50565b600080604083850312156100e357600080fd5b82516100ee816100b8565b60208401519092506100ff816100b8565b809150509250929050565b60006020828403121561011c57600080fd5b8151801515811461012c57600080fd5b9392505050565b60805160a0516105916101646000396000818160c8015261015e015260008181607c015261021301526105916000f3fe6080604052600436106100345760003560e01c80632ae6d3ea14610039578063537a33811461006a578063f9ea29cb146100b6575b600080fd5b61004c6100473660046102f4565b6100ea565b60405167ffffffffffffffff90911681526020015b60405180910390f35b34801561007657600080fd5b5061009e7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610061565b3480156100c257600080fd5b5061009e7f000000000000000000000000000000000000000000000000000000000000000081565b60408051600180825281830190925260009182919060208083019080368337019050509050600160601b341061015c5760405162461bcd60e51b81526020600482015260136024820152721d1bdbc81b5d58da081d985b1d59481cd95b9d606a1b604482015260640160405180910390fd5b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031663d0e30db0346040518263ffffffff1660e01b81526004016000604051808303818588803b1580156101b757600080fd5b505af11580156101cb573d6000803e3d6000fd5b505050505034816000815181106101e4576101e46103c5565b6001600160601b039092166020928302919091019091015260405163ba8fe75f60e01b81526001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063ba8fe75f90610258908c908c908c9087908d908d9033908e908e9060040161047a565b6020604051808303816000875af1158015610277573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061029b919061052a565b9998505050505050505050565b60008083601f8401126102ba57600080fd5b50813567ffffffffffffffff8111156102d257600080fd5b6020830191508360208260051b85010111156102ed57600080fd5b9250929050565b60008060008060008060006080888a03121561030f57600080fd5b87359650602088013567ffffffffffffffff8082111561032e57600080fd5b61033a8b838c016102a8565b909850965060408a013591508082111561035357600080fd5b61035f8b838c016102a8565b909650945060608a013591508082111561037857600080fd5b818a0191508a601f83011261038c57600080fd5b81358181111561039b57600080fd5b8b60208285010111156103ad57600080fd5b60208301945080935050505092959891949750929550565b634e487b7160e01b600052603260045260246000fd5b600081518084526020808501945080840160005b838110156104145781516001600160601b0316875295820195908201906001016103ef565b509495945050505050565b81835260006001600160fb1b0383111561043857600080fd5b8260051b80836020870137939093016020019392505050565b81835281816020850137506000828201602090810191909152601f909101601f19169091010190565b89815260c060208083018290529082018990526000908a9060e0840183805b8d8110156104cb5784356001600160601b0381168082146104b8578384fd5b8452509383019391830191600101610499565b505084810360408601526104df818c6103db565b9250505082810360608401526104f681888a61041f565b6001600160a01b0387166080850152905082810360a084015261051a818587610451565b9c9b505050505050505050505050565b60006020828403121561053c57600080fd5b815167ffffffffffffffff8116811461055457600080fd5b939250505056fea2646970667358221220bc318ec24d02403ece2a4ec4b44744d7afe5f15d8aeda166493d94bd15dbcb1e64736f6c63430008140033",
+  "deployedBytecode": "0x6080604052600436106100345760003560e01c80632ae6d3ea14610039578063537a33811461006a578063f9ea29cb146100b6575b600080fd5b61004c6100473660046102f4565b6100ea565b60405167ffffffffffffffff90911681526020015b60405180910390f35b34801561007657600080fd5b5061009e7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610061565b3480156100c257600080fd5b5061009e7f000000000000000000000000000000000000000000000000000000000000000081565b60408051600180825281830190925260009182919060208083019080368337019050509050600160601b341061015c5760405162461bcd60e51b81526020600482015260136024820152721d1bdbc81b5d58da081d985b1d59481cd95b9d606a1b604482015260640160405180910390fd5b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031663d0e30db0346040518263ffffffff1660e01b81526004016000604051808303818588803b1580156101b757600080fd5b505af11580156101cb573d6000803e3d6000fd5b505050505034816000815181106101e4576101e46103c5565b6001600160601b039092166020928302919091019091015260405163ba8fe75f60e01b81526001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063ba8fe75f90610258908c908c908c9087908d908d9033908e908e9060040161047a565b6020604051808303816000875af1158015610277573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061029b919061052a565b9998505050505050505050565b60008083601f8401126102ba57600080fd5b50813567ffffffffffffffff8111156102d257600080fd5b6020830191508360208260051b85010111156102ed57600080fd5b9250929050565b60008060008060008060006080888a03121561030f57600080fd5b87359650602088013567ffffffffffffffff8082111561032e57600080fd5b61033a8b838c016102a8565b909850965060408a013591508082111561035357600080fd5b61035f8b838c016102a8565b909650945060608a013591508082111561037857600080fd5b818a0191508a601f83011261038c57600080fd5b81358181111561039b57600080fd5b8b60208285010111156103ad57600080fd5b60208301945080935050505092959891949750929550565b634e487b7160e01b600052603260045260246000fd5b600081518084526020808501945080840160005b838110156104145781516001600160601b0316875295820195908201906001016103ef565b509495945050505050565b81835260006001600160fb1b0383111561043857600080fd5b8260051b80836020870137939093016020019392505050565b81835281816020850137506000828201602090810191909152601f909101601f19169091010190565b89815260c060208083018290529082018990526000908a9060e0840183805b8d8110156104cb5784356001600160601b0381168082146104b8578384fd5b8452509383019391830191600101610499565b505084810360408601526104df818c6103db565b9250505082810360608401526104f681888a61041f565b6001600160a01b0387166080850152905082810360a084015261051a818587610451565b9c9b505050505050505050505050565b60006020828403121561053c57600080fd5b815167ffffffffffffffff8116811461055457600080fd5b939250505056fea2646970667358221220bc318ec24d02403ece2a4ec4b44744d7afe5f15d8aeda166493d94bd15dbcb1e64736f6c63430008140033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}
