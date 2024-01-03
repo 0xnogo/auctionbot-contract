@@ -1,6 +1,10 @@
 {
-  "name": "auction-backend",
+  "name": "auctionbot-contract",
   "version": "0.0.0",
+  "author": {
+    "name": "nogo",
+    "email": "0xnogo@gmail.com"
+  },
   "directories": {
     "test": "test"
   },
