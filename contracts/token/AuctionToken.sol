@@ -26,6 +26,9 @@ contract AuctionToken is ERC20, Ownable {
     address public revShareWallet;
     address public teamWallet;
 
+    bool private swapping;
+    bool public automaticDistributionEnabled = true;
+
     // ========== EVENTS ==========
 
     event LiquidityAdded(uint256 tokens, uint256 eth);
@@ -210,6 +213,14 @@ contract AuctionToken is ERC20, Ownable {
         require(success);
     }
 
+    /**
+     * @dev Allows the owner to enable/disable automatic distribution of ETH.
+     * @param _enabled Boolean indicating whether automatic distribution is enabled.
+     */
+    function setAutomaticDistribution(bool _enabled) external onlyOwner {
+        automaticDistributionEnabled = _enabled;
+    }
+
     // ========== OVERRIDES ==========
 
     /**
@@ -237,9 +248,12 @@ contract AuctionToken is ERC20, Ownable {
             contractEthBalance >= ethDistributionThreshold &&
             from != address(this) &&
             to != address(this) &&
-            msg.sender != owner()
+            msg.sender != owner() &&
+            automaticDistributionEnabled
         ) {
+            swapping = true;
             _executeDistribution(contractEthBalance);
+            swapping = false;
         }
 
         super._transfer(from, to, amount);
