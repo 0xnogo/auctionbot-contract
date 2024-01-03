@@ -9,8 +9,6 @@ import "hardhat-gas-reporter";
 import type { HttpNetworkUserConfig } from "hardhat/types";
 import yargs from "yargs";
 
-import jsonEnv from "../../config/config.dev.json";
-
 import { clearAuction } from "./src/tasks/clear_auction";
 import { clearAuctionSimplified } from "./src/tasks/clear_auction_simplifed";
 import { createTestToken } from "./src/tasks/create_new_test_token";
@@ -37,15 +35,19 @@ const argv = yargs
 
 // Load environment variables.
 dotenv.config();
-const { GAS_PRICE_GWEI, ALCHEMY_API_KEY, MNEMONIC, MY_ETHERSCAN_API_KEY } =
-  process.env;
+
+const {
+  GAS_PRICE_GWEI,
+  ALCHEMY_API_KEY,
+  MNEMONIC,
+  MY_ETHERSCAN_API_KEY,
+  PK,
+} = process.env;
 
 const DEFAULT_MNEMONIC =
   "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat";
 
 const sharedNetworkConfig: HttpNetworkUserConfig = {};
-
-const PK = jsonEnv.PRIVATE_KEY;
 
 if (PK) {
   sharedNetworkConfig.accounts = [PK];
