@@ -13,7 +13,7 @@ export const contractNames = {
   weth9: "WETH9",
   erc20Factory: "ERC20Factory",
   auctionToken: "AuctionToken",
-  mockBiddingToken:"MockBiddingToken"
+  mockBiddingToken: "MockBiddingToken",
 };
 
 /**

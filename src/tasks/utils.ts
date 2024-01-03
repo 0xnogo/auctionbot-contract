@@ -1,7 +1,7 @@
 import { Contract } from "ethers";
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 
-import weth9Networks from "../../../../node_modules/canonical-weth/networks.json";
+import weth9Networks from "../../node_modules/canonical-weth/networks.json";
 import { TypedDataDomain } from "../ts/ethers";
 
 export function domain(

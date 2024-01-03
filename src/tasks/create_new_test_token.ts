@@ -14,12 +14,14 @@ const createTestToken: () => void = () => {
 
       const easyAuction = await getEasyAuctionContract(hardhatRuntime);
 
-      const { auctioningToken, biddingToken } =
-        await createTokensAndMintAndApprove(
-          easyAuction,
-          [caller],
-          hardhatRuntime,
-        );
+      const {
+        auctioningToken,
+        biddingToken,
+      } = await createTokensAndMintAndApprove(
+        easyAuction,
+        [caller],
+        hardhatRuntime,
+      );
       console.log(
         "Following tokens were created: ",
         auctioningToken.address,

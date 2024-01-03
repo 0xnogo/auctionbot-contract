@@ -13,8 +13,9 @@ const createVestingStrategy: () => void = () => {
 
       const easyAuction = await getEasyAuctionContract(hardhatRuntime);
 
-      const TokenVestingFactory =
-        await hardhatRuntime.ethers.getContractFactory("TokenVestingFactory");
+      const TokenVestingFactory = await hardhatRuntime.ethers.getContractFactory(
+        "TokenVestingFactory",
+      );
       const tokenVestingFactory = await TokenVestingFactory.deploy(
         easyAuction.address,
         {
